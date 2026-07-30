@@ -1,8 +1,25 @@
 aid: mashgin
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mashgin.png
 name: Mashgin
-description: 'Mashgin is a company surfaced as a portfolio company of matrix-partners, susa-ventures,
-  y-combinator and added to the API Evangelist network as a stub for enrichment. Sector: frontier. This
-  profile is a lead awaiting the enrichment pipeline.'
+description: 'Mashgin builds an AI-powered, computer-vision self-checkout system that
+  identifies multiple items simultaneously without barcodes, letting customers check
+  out in seconds. Its touchless kiosks are deployed across 5,000+ locations including
+  convenience stores, stadiums, arenas, universities, and healthcare facilities, and
+  integrate with 50+ payment networks, POS systems, and loyalty programs. Mashgin does
+  not currently publish a public developer API, SDK, or developer portal; integrations
+  are handled through direct partnerships and its support and knowledge-base channels.
+  Backed by Matrix Partners, SUSA Ventures, and Y Combinator.'
 url: https://raw.githubusercontent.com/api-evangelist/mashgin/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,10 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Frontier
+- Retail
+- Self-Checkout
+- Computer Vision
+- Artificial Intelligence
+- Payments
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,5 +47,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mashgin-domain-security.yml
 - type: Website
   url: https://mashgin.com
+- type: Support
+  url: https://mashgin.service-now.com/kb
+- type: Integrations
+  url: https://mashgin.com/solution/integrations
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
